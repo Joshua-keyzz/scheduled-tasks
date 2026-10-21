@@ -11,8 +11,10 @@ from twilio.rest import Client
 import os
 
 # import os and use it to get the Github repository secrets
-MY_EMAIL = os.environ.get("MY_EMAIL")
-MY_PASSWORD = os.environ.get("MY_PASSWORD")
+OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
+api_key = os.environ.get("OWM_API_KEY")
+account_sid = os.environ.get("ACCOUNT_SID")
+auth_token = os.environ.get("AUTH_TOKEN")
 
 MY_LAT = 6.451140
 MY_LONG = 3.388400
